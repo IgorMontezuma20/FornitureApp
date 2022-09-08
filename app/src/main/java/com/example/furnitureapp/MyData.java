@@ -3,21 +3,21 @@ package com.example.furnitureapp;
 public class MyData {
 
     static String[] nameArray = {
-            "New Arrival",
-            "Test 2",
-            "Test 3"
+            "Chegaram\nNovidades",
+            "Do seu jeito",
+            "Com seu estilo"
     };
 
     static String [] versionArray = {
-            "Best furniture",
-            "Subscribe",
-            "like"
+            "Melhor mobilia",
+            "Mobilhe do seu jeito",
+            "Decore com mais estilo"
     };
 
     static int [] id_ = {1,2,3};
 
     static int[] drawableArray = {
-            R.drawable.fur1,
+            R.drawable.fur4,
             R.drawable.fur2,
             R.drawable.fur3,
 

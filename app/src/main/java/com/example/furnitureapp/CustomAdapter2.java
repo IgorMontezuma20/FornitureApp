@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.view.menu.MenuView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -17,13 +16,13 @@ import com.bumptech.glide.request.RequestOptions;
 
 import java.util.ArrayList;
 
-public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewholder>{
+public class CustomAdapter2 extends RecyclerView.Adapter<CustomAdapter2.MyViewholder>{
 
     private ArrayList<DataModel> dataSet;
     private Context mContexat;
 
 
-    public CustomAdapter(ArrayList<DataModel> dataSet, Context mContexat) {
+    public CustomAdapter2(ArrayList<DataModel> dataSet, Context mContexat) {
         this.dataSet = dataSet;
         this.mContexat = mContexat;
     }
@@ -33,7 +32,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewhold
     public MyViewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_cardview, parent, false);
+                .inflate(R.layout.item_cardview_secondary, parent, false);
 
         MyViewholder myViewHolder = new MyViewholder(view);
         return myViewHolder;
