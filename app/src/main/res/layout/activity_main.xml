@@ -45,16 +45,25 @@
             android:text="Mais vendidos"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recyclerViewchapters" />
+            app:layout_constraintTop_toBottomOf="@+id/recyclerViewPrimary" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewchapters"
+            android:id="@+id/recyclerViewPrimary"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:layout_marginTop="60dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -80,13 +89,5 @@
         app:layout_constraintStart_toStartOf="@+id/imageView2">
 
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewSecondary"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

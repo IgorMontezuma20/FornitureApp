@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     //Segundo card
     private static RecyclerView.Adapter adapter2;
     private  RecyclerView.LayoutManager layoutManager2;
-    private  static RecyclerView recyclerView2;
+    private static RecyclerView recyclerView2;
     private static ArrayList<DataModel> data2;
 
 
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void InitiateMainCards() {
         //Método para os CardViews
-        recyclerView = findViewById(R.id.recyclerViewchapters);
+        recyclerView = findViewById(R.id.recyclerViewPrimary);
         recyclerView.setHasFixedSize(true);
 
         layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,
@@ -68,7 +68,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerView2 = findViewById(R.id.recyclerViewSecondary);
         recyclerView2.setHasFixedSize(true);
 
-        layoutManager2 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,
+        layoutManager2 = new LinearLayoutManager(this,
+                LinearLayoutManager.HORIZONTAL,
                 false);
 
         recyclerView2.setLayoutManager(layoutManager2);
@@ -76,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
         data2 = new ArrayList<DataModel>();
         for (int i = 0; i < MyData2.nameArray.length; i++){
-            data.add(new DataModel(
+            data2.add(new DataModel(
                     MyData2.nameArray[i],
                     MyData2.versionArray[i],
                     MyData2.id_[i],
