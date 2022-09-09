@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.view.menu.MenuView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -20,12 +19,12 @@ import java.util.ArrayList;
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewholder>{
 
     private ArrayList<DataModel> dataSet;
-    private Context mContexat;
+    private Context mContext;
 
 
     public CustomAdapter(ArrayList<DataModel> dataSet, Context mContexat) {
         this.dataSet = dataSet;
-        this.mContexat = mContexat;
+        this.mContext = mContexat;
     }
 
     @NonNull
@@ -51,7 +50,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewhold
         tvVersion.setText(dataSet.get(position).getVersion());
 
 
-        Glide.with(mContexat)
+        Glide.with(mContext)
                 .load(dataSet.get(position).getImage())
                 .apply(RequestOptions.bitmapTransform
                         (new RoundedCorners(20)))
